@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Some Kind of Survey Form</title>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+  <link rel='stylesheet' href='css/style.css'>
+
+</head>
+
+<body>
+  <header class='container-fluid text-center'>
+    <h1 id='title'>Survey Thing</h1>
+    <p id='description'>Enter your data here.</p>
+  </header>
+
+  <main class='container'>
+    <form id='survey-form'>
+      <div>
+        <label for='name' class='input-label' id='name-label'>*Name:</label>
+        <input type='text' class='input-area' id='name' placeholder="Name Here" required>
+      </div>
+      <div>
+        <label for='email' class='input-label' id='email-label'>*Email Address:</label>
+        <input type='email' class='input-area' id='email' placeholder='email@here.com' required>
+      </div>
+      <div>
+        <label for='number' class='input-label' id='number-label'>*How I Like This Form (scale from 1 to 10):</label>
+        <input type="number" class='input-area' id='number' placeholder='0' min='1' max='10' required>
+      </div>
+      <div>
+        <label for='dropdown' class='input-label' id='dropdown-label'>My Favorite Food:</label>
+        <select class='input-area' id='dropdown'>
+          <option value='pizza'>Pizza</option>
+          <option value='sushi'>Sushi</option>
+          <option value='burgers'>Burgers</option>
+          <option value='shoes'>Shoes</option>
+        </select>
+      </div>
+      <div>
+        <label for="radio-buttons" class='input-label'>Select Something:</label>
+        <div class='input-area'>
+          <input type='radio' name='thing-select' value='thing1' checked> Thing 1
+          <br>
+          <input type='radio' name='thing-select' value='thing2'> Thing 2
+          <br>
+          <input type='radio' name='thing-select' value='thing2'> Thing 3
+        </div>
+
+      </div>
+      <div>
+        <label for='check-boxes' class='input-label'>Check Some Things:</label>
+        <div class='input-area'>
+          <input type='checkbox' name='thing-box' value='box1'> Box 1
+          <br>
+          <input type='checkbox' name='thing-box' value='box2'> Box 2
+          <br>
+          <input type='checkbox' name='thing-box' value='box2'> Box 3
+        </div>
+      </div>
+      <div>
+        <label for="comments-area" class='input-label'>Additional Comments:</label>
+        <textarea class='input-area' id='comments-area' placeholder='Something...'></textarea>
+      </div>
+      <br>
+      <div>
+          <button class='btn btn-primary btn-block' id='submit' disabled>Submit</button>
+      </div>
+    </form>
+    <p>* = required</p>
+
+
+
+  </main>
+
+  <footer>
+  </footer>
+</body>
+
+</html>

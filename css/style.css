@@ -1,0 +1,33 @@
+form{
+    display: table;
+}
+
+form div{
+    display: table-row;
+}
+button{
+    width: 100%;
+}
+main{
+    background: rgba(128, 128, 128, 0.432);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border-radius: 5%;
+}
+
+.input-label{
+    margin-top: 20px;
+    display: table-cell;
+    width:50%;
+    border: 20px solid transparent;
+}
+
+.input-area {
+    margin-top: 20px;
+    display: table-cell;
+    width: 100%;
+    padding: 2px;
+}
+
