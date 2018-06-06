@@ -1,13 +1,17 @@
 form{
     display: table;
+    width: 100%;
 }
 
 form div{
     display: table-row;
 }
+
 button{
+    height: 100%;
     width: 100%;
 }
+
 main{
     background: rgba(128, 128, 128, 0.432);
     margin-top: 20px;
